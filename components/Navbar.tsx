@@ -2,7 +2,6 @@
 
 import { useState } from "react";
 import { motion, AnimatePresence, useReducedMotion } from "motion/react";
-import { cn } from "@/lib/utils";
 import { Menu, X, ArrowRight } from "lucide-react";
 
 const links = [
