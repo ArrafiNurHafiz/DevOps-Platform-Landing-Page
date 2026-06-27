@@ -102,7 +102,7 @@ export function Pricing() {
                 <div className="flex items-baseline gap-1 mb-2">
                   <span className="text-3xl font-bold">{tier.price}</span>
                   {tier.period && (
-                    <span className="text-sm text-[#52525b]">{tier.period}</span>
+                    <span className="text-sm text-[#7a7a82]">{tier.period}</span>
                   )}
                 </div>
                 <p className="text-sm text-[#a1a1aa] mb-6">

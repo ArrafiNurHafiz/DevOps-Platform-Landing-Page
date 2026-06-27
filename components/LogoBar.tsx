@@ -13,7 +13,7 @@ export function LogoBar() {
   return (
     <section className="py-16 border-t border-[#27272a]">
       <div className="max-w-5xl mx-auto px-4">
-        <p className="text-center text-xs text-[#52525b] font-mono uppercase tracking-widest mb-8">
+        <p className="text-center text-xs text-[#7a7a82] font-mono uppercase tracking-widest mb-8">
           Trusted by engineering teams
         </p>
         <div className="overflow-hidden">
@@ -21,9 +21,11 @@ export function LogoBar() {
             {[...logos, ...logos].map((logo, i) => (
               <img
                 key={`${logo.slug}-${i}`}
-                src={`https://cdn.simpleicons.org/${logo.slug}/a1a1aa`}
+                src={`https://cdn.jsdelivr.net/npm/simple-icons@latest/icons/${logo.slug}.svg`}
                 alt={logo.name}
-                className="h-6 md:h-7 opacity-50 hover:opacity-100 transition-opacity"
+                width={28}
+                height={28}
+                className="h-6 md:h-7 w-auto opacity-50 hover:opacity-100 transition-opacity"
               />
             ))}
           </div>

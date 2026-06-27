@@ -50,11 +50,13 @@ export function Integrations() {
               className="group flex flex-col items-center gap-3 p-4 rounded-xl bg-[#18181b] border border-[#27272a] hover:border-brand-500/30 hover:bg-[#1f1f23] transition-all"
             >
               <img
-                src={`https://cdn.simpleicons.org/${item.slug}/a1a1aa`}
+                src={`https://cdn.jsdelivr.net/npm/simple-icons@latest/icons/${item.slug}.svg`}
                 alt={item.name}
-                className="h-6 md:h-7 opacity-60 group-hover:opacity-100 transition-all group-hover:scale-110"
+                width={28}
+                height={28}
+                className="h-6 md:h-7 w-auto opacity-60 group-hover:opacity-100 transition-all group-hover:scale-110"
               />
-              <span className="text-xs text-[#52525b] group-hover:text-[#a1a1aa] transition-colors">
+              <span className="text-xs text-[#7a7a82] group-hover:text-[#a1a1aa] transition-colors">
                 {item.name}
               </span>
             </motion.div>

@@ -19,21 +19,21 @@ export function Footer() {
               </span>
               DevOps
             </a>
-            <p className="text-xs text-[#52525b] leading-relaxed max-w-xs">
+            <p className="text-xs text-[#7a7a82] leading-relaxed max-w-xs">
               One platform for CI/CD, monitoring, and infrastructure.
             </p>
           </div>
           {Object.entries(footerLinks).map(([category, links]) => (
             <div key={category}>
-              <h4 className="text-xs font-semibold text-[#a1a1aa] uppercase tracking-wider mb-4">
+              <h3 className="text-xs font-semibold text-[#a1a1aa] uppercase tracking-wider mb-4">
                 {category}
-              </h4>
+              </h3>
               <ul className="space-y-2.5">
                 {links.map((link) => (
                   <li key={link}>
                     <a
                       href="#"
-                      className="text-xs text-[#52525b] hover:text-[#a1a1aa] transition-colors"
+                      className="text-xs text-[#7a7a82] hover:text-[#a1a1aa] transition-colors"
                     >
                       {link}
                     </a>
@@ -45,7 +45,7 @@ export function Footer() {
         </div>
 
         <div className="mt-12 pt-8 border-t border-[#27272a] flex flex-col md:flex-row items-center justify-between gap-4">
-          <p className="text-xs text-[#52525b]">
+          <p className="text-xs text-[#7a7a82]">
             &copy; 2026 DevOps Platform. All rights reserved.
           </p>
           <div className="flex items-center gap-4">
@@ -53,9 +53,11 @@ export function Footer() {
               <input
                 type="email"
                 placeholder="Subscribe to updates"
-                className="px-3 py-1.5 rounded-full bg-[#18181b] border border-[#27272a] text-xs text-[#fafafa] placeholder:text-[#52525b] focus:outline-none focus:border-brand-500/50 w-48"
+                className="px-3 py-1.5 rounded-full bg-[#18181b] border border-[#27272a] text-xs text-[#fafafa] placeholder:text-[#7a7a82] focus:outline-none focus:border-brand-500/50 w-48"
               />
-              <button className="p-1.5 rounded-full bg-brand-500 text-black hover:bg-brand-400 transition-colors">
+              <button
+                aria-label="Subscribe"
+                className="p-1.5 rounded-full bg-brand-500 text-black hover:bg-brand-400 transition-colors">
                 <ArrowRight className="w-3.5 h-3.5" />
               </button>
             </div>

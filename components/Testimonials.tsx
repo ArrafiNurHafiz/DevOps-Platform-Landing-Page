@@ -71,7 +71,7 @@ export function Testimonials() {
                   <span className="block text-sm font-medium">
                     {testimonials[current].name}
                   </span>
-                  <span className="block text-xs text-[#52525b]">
+                  <span className="block text-xs text-[#7a7a82]">
                     {testimonials[current].role},{" "}
                     {testimonials[current].company}
                   </span>
@@ -97,11 +97,17 @@ export function Testimonials() {
             <button
               key={i}
               onClick={() => setCurrent(i)}
-              className={`w-2 h-2 rounded-full transition-all ${
-                i === current ? "bg-brand-500 w-6" : "bg-[#27272a]"
-              }`}
+              className="p-2"
               aria-label={`Go to testimonial ${i + 1}`}
-            />
+            >
+              <span
+                className={`block rounded-full transition-all ${
+                  i === current
+                    ? "bg-brand-500 w-4 h-1.5"
+                    : "bg-[#27272a] w-1.5 h-1.5"
+                }`}
+              />
+            </button>
           ))}
           <button
             onClick={() => setCurrent((c) => (c + 1) % testimonials.length)}

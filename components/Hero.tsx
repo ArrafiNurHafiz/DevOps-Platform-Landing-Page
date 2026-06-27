@@ -75,7 +75,7 @@ export function Hero() {
           initial={reduce ? {} : { opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ duration: 1, delay: 0.6 }}
-          className="mt-16 flex items-center justify-center gap-6 text-xs text-[#52525b]"
+          className="mt-16 flex items-center justify-center gap-6 text-xs text-[#7a7a82]"
         >
           <span>Works with</span>
           {["GitHub", "GitLab", "AWS", "GCP", "Azure"].map((name) => (

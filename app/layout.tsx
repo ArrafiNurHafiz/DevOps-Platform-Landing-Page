@@ -7,6 +7,7 @@ export const metadata: Metadata = {
   title: "DevOps Platform — Ship Faster. Break Less. Own Your Infrastructure.",
   description:
     "Integrated CI/CD, monitoring, and infrastructure platform for modern engineering teams. Get started free.",
+  icons: [{ rel: "icon", url: "/favicon.svg", type: "image/svg+xml" }],
   openGraph: {
     title: "DevOps Platform",
     description:
